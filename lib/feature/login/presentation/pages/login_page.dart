@@ -16,6 +16,8 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    _emailController.text = 'test2@gmail.com';
+    _passwordController.text = '12345678';
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
@@ -30,8 +32,8 @@ class LoginPage extends StatelessWidget {
             ScaffoldMessenger.of(context)
                 .showSnackBar(const SnackBar(content: Text('Login Failed')));
           } else if (state is LoginSuccess) {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const HomePage()));
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => HomePage()));
           }
         },
         child: BlocBuilder<LoginCubit, LoginState>(

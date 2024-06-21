@@ -36,16 +36,18 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(
-          create: (context) => LoginCubit(),
-        ),
-        BlocProvider(
-          create: (context) => HomeCubit(),
-        ),
-      ],
-      child: MaterialApp(title: 'Flutter Demo', home: LoginPage()),
-    );
+    return MaterialApp(
+        title: 'Flutter Demo',
+        home: MultiBlocProvider(
+          providers: [
+            BlocProvider(
+              create: (context) => LoginCubit(),
+            ),
+            BlocProvider(
+              create: (context) => HomeCubit(),
+            ),
+          ],
+          child: LoginPage(),
+        ));
   }
 }

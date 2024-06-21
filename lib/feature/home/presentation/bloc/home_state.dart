@@ -11,7 +11,7 @@ class HomeInitial extends HomeState {}
 
 class HomeLoading extends HomeState {}
 
-class HomeLoggedOut extends HomeState {}
+class HomeLogout extends HomeState {}
 
 class HomeLoaded extends HomeState {
   final List<HomeCommentModel> items;
