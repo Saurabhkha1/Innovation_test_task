@@ -13,14 +13,14 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml:6:5-66
-15-->/Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml:6:22-64
+15-->/Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->[:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
-16-->[:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
+16-->[:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+16-->[:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
 17    <uses-permission android:name="android.permission.WAKE_LOCK" />
-17-->[:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-68
-17-->[:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-65
+17-->[:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-68
+17-->[:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-65
 18    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 18-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/macbookpro/.gradle/caches/transforms-3/f7e12b1f9ac2f02205efe3be56ac5f18/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:25:5-79
 18-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/macbookpro/.gradle/caches/transforms-3/f7e12b1f9ac2f02205efe3be56ac5f18/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:25:22-76
@@ -86,43 +86,43 @@
 66            android:value="2" />
 67
 68        <service
-68-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+68-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
 69            android:name="com.google.firebase.components.ComponentDiscoveryService"
-69-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+69-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
 70            android:directBootAware="true"
 70-->[com.google.firebase:firebase-common:20.4.2] /Users/macbookpro/.gradle/caches/transforms-3/0f3b748e3e0116b10da63b5db6c97f3d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
 71            android:exported="false" >
 71-->[com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:14:13-37
 72            <meta-data
-72-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+72-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 73                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
-73-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-130
+73-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-130
 74                android:value="com.google.firebase.components.ComponentRegistrar" />
-74-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+74-->[:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 75            <meta-data
-75-->[:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
+75-->[:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
 76                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
-76-->[:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-128
+76-->[:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-128
 77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
+77-->[:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
 78            <meta-data
-78-->[:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+78-->[:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 79                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-79-->[:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+79-->[:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+80-->[:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 81            <meta-data
-81-->[:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+81-->[:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 82                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-82-->[:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+82-->[:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
 83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+83-->[:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 84            <meta-data
-84-->[:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+84-->[:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-85-->[:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+85-->[:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+86-->[:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 87            <meta-data
 87-->[com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:15:13-17:85
 88                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"

@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:2:5-32:19
-MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-19:19
-MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-19:19
-MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:2:5-32:19
+MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-19:19
+MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-19:19
+MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:11:5-22:19
 MERGED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:11:5-22:19
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookpro/.gradle/caches/transforms-3/e2fba16191078e764743f0ceca6a0e89/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:28:5-73:19
@@ -72,19 +72,19 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/macb
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /Users/macbookpro/.gradle/caches/transforms-3/9c1d2e404caec33c1b4c5b322860d26e/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:name
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:1:1-33:12
-MERGED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:1:1-33:12
-MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
-MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test_innoventure/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
+ADDED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:1:1-33:12
+MERGED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:1:1-33:12
+MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookpro/.gradle/caches/transforms-3/e2fba16191078e764743f0ceca6a0e89/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-firestore:24.9.1] /Users/macbookpro/.gradle/caches/transforms-3/b030a29409bfeef62325edc22142a9d1/transformed/jetified-firebase-firestore-24.9.1/AndroidManifest.xml:2:1-26:12
@@ -150,39 +150,39 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/macbookpro/.gradle/ca
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/macbookpro/.gradle/caches/transforms-3/6a885e1ca1213d74ca3cafdacbecf529/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
 MERGED from [io.grpc:grpc-android:1.52.1] /Users/macbookpro/.gradle/caches/transforms-3/0eb0763a512d9da5d747c27afc78c432/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/macbookpro/.gradle/caches/transforms-3/f081f04c75a546569b46fb097168a397/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:1:1-33:12
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:1:1-33:12
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:1:1-33:12
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-sdk
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml
-MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test_innoventure/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test_innoventure/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookpro/.gradle/caches/transforms-3/e2fba16191078e764743f0ceca6a0e89/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:21:5-23:64
@@ -313,20 +313,20 @@ MERGED from [io.grpc:grpc-android:1.52.1] /Users/macbookpro/.gradle/caches/trans
 MERGED from [io.grpc:grpc-android:1.52.1] /Users/macbookpro/.gradle/caches/transforms-3/0eb0763a512d9da5d747c27afc78c432/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/macbookpro/.gradle/caches/transforms-3/f081f04c75a546569b46fb097168a397/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/macbookpro/.gradle/caches/transforms-3/f081f04c75a546569b46fb097168a397/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookpro/.gradle/caches/transforms-3/e2fba16191078e764743f0ceca6a0e89/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml:6:5-66
-MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-67
-MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-67
+ADDED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-67
+MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-67
 MERGED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookpro/.gradle/caches/transforms-3/e2fba16191078e764743f0ceca6a0e89/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:25:5-67
@@ -348,17 +348,17 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/macbookpro/.g
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] /Users/macbookpro/.gradle/caches/transforms-3/d11415ea41a879cb92a33b2581f6fa90/transformed/jetified-play-services-measurement-sdk-api-21.5.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] /Users/macbookpro/.gradle/caches/transforms-3/d11415ea41a879cb92a33b2581f6fa90/transformed/jetified-play-services-measurement-sdk-api-21.5.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/macbookpro/Desktop/test_innoventure/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/android/app/src/debug/AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-18:19
-MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-18:19
-MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-18:19
+MERGED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-18:19
+MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
 MERGED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:12:9-21:19
 MERGED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:12:9-21:19
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookpro/.gradle/caches/transforms-3/e2fba16191078e764743f0ceca6a0e89/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:66:9-72:19
@@ -384,17 +384,17 @@ MERGED from [com.google.firebase:firebase-common:20.4.2] /Users/macbookpro/.grad
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.4.2] /Users/macbookpro/.gradle/caches/transforms-3/0f3b748e3e0116b10da63b5db6c97f3d/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
 	android:name
-		ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+		ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-130
+		ADDED from [:firebase_crashlytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-130
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
-MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test_innoventure/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
-MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test_innoventure/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [:connectivity_plus] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookpro/.gradle/caches/transforms-3/e2fba16191078e764743f0ceca6a0e89/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookpro/.gradle/caches/transforms-3/e2fba16191078e764743f0ceca6a0e89/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.9.1] /Users/macbookpro/.gradle/caches/transforms-3/b030a29409bfeef62325edc22142a9d1/transformed/jetified-firebase-firestore-24.9.1/AndroidManifest.xml:10:5-79
@@ -418,9 +418,9 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] /Users/ma
 MERGED from [io.grpc:grpc-android:1.52.1] /Users/macbookpro/.gradle/caches/transforms-3/0eb0763a512d9da5d747c27afc78c432/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.52.1] /Users/macbookpro/.gradle/caches/transforms-3/0eb0763a512d9da5d747c27afc78c432/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
+		ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-68
+ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] /Users/macbookpro/.gradle/caches/transforms-3/f7e12b1f9ac2f02205efe3be56ac5f18/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] /Users/macbookpro/.gradle/caches/transforms-3/f7e12b1f9ac2f02205efe3be56ac5f18/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:21.5.0] /Users/macbookpro/.gradle/caches/transforms-3/30a097b48db48786021eaedabc59e801/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:25:5-68
@@ -430,31 +430,31 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] /Users/macbookpro/.gradle/caches/transforms-3/d11415ea41a879cb92a33b2581f6fa90/transformed/jetified-play-services-measurement-sdk-api-21.5.0/AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] /Users/macbookpro/.gradle/caches/transforms-3/d11415ea41a879cb92a33b2581f6fa90/transformed/jetified-play-services-measurement-sdk-api-21.5.0/AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-65
+		ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-65
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
+ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
 	android:value
-		ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
+		ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
 	android:name
-		ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test_innoventure/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-128
+		ADDED from [:firebase_analytics] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-128
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_auth] /Users/macbookpro/Desktop/test_innoventure/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+		ADDED from [:firebase_auth] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+ADDED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+		ADDED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:cloud_firestore] /Users/macbookpro/Desktop/test_innoventure/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+		ADDED from [:cloud_firestore] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_core] /Users/macbookpro/Desktop/test_innoventure/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+		ADDED from [:firebase_core] /Users/macbookpro/Desktop/test/Untitled/Innovation_test_task/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 meta-data#com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar
 ADDED from [com.google.firebase:firebase-crashlytics:18.6.0] /Users/macbookpro/.gradle/caches/transforms-3/5a4d42df85cdb1fadf2f362af40d893a/transformed/jetified-firebase-crashlytics-18.6.0/AndroidManifest.xml:15:13-17:85
 	android:value
