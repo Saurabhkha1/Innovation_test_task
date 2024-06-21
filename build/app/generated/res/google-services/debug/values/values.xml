@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">647722278642</string>
+    <string name="google_api_key" translatable="false">AIzaSyAUUO3P70rYjuD_XVJ9Rqj5jqcxGhbOk9Y</string>
+    <string name="google_app_id" translatable="false">1:647722278642:android:4e3979d3528d89d136fa6b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAUUO3P70rYjuD_XVJ9Rqj5jqcxGhbOk9Y</string>
+    <string name="google_storage_bucket" translatable="false">testinnovation-d6752.appspot.com</string>
+    <string name="project_id" translatable="false">testinnovation-d6752</string>
+</resources>
