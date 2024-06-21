@@ -23,89 +23,93 @@ class LoginPage extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
         title: const Text('Flutter Test'),
       ),
-      body: BlocListener<LoginCubit, LoginState>(
-        listener: (context, state) {
-          if (state is LoginAuth) {
-            ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Login Successfully')));
-          } else if (state is LoginError) {
-            ScaffoldMessenger.of(context)
-                .showSnackBar(const SnackBar(content: Text('Login Failed')));
-          } else if (state is LoginSuccess) {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => HomePage()));
-          }
-        },
-        child: BlocBuilder<LoginCubit, LoginState>(
-          builder: (context, state) {
-            if (state is LoginLoading) {
-              return const Center(
-                child: CircularProgressIndicator(),
-              );
-            }
-            return Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  CustomTextField(
-                    textFieldController: _emailController,
-                    hintText: 'User Email',
-                    prefixIcon: const Icon(Icons.person),
-                  ),
-                  CustomTextField(
-                    textFieldController: _passwordController,
-                    hintText: 'Password',
-                    obscureText: true,
-                    prefixIcon: const Icon(Icons.lock),
-                    suffixIcon: IconButton(
-                      icon: const Icon(
-                        Icons.remove_red_eye,
+      body: BlocBuilder<LoginCubit, LoginState>(
+        builder: (context, state) {
+          return BlocListener<LoginCubit, LoginState>(
+            listener: (context, state) {
+              if (state is LoginAuth) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Login Successfully')));
+              } else if (state is LoginError) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Login Failed')));
+              } else if (state is LoginSuccess) {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomePage()));
+              }
+            },
+            child: BlocBuilder<LoginCubit, LoginState>(
+              builder: (context, state) {
+                if (state is LoginLoading) {
+                  return const Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+                return Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const SizedBox(
+                        height: 20,
                       ),
-                      onPressed: () {},
-                    ),
+                      CustomTextField(
+                        textFieldController: _emailController,
+                        hintText: 'User Email',
+                        prefixIcon: const Icon(Icons.person),
+                      ),
+                      CustomTextField(
+                        textFieldController: _passwordController,
+                        hintText: 'Password',
+                        obscureText: true,
+                        prefixIcon: const Icon(Icons.lock),
+                        suffixIcon: IconButton(
+                          icon: const Icon(
+                            Icons.remove_red_eye,
+                          ),
+                          onPressed: () {},
+                        ),
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.02,
+                      ),
+                      CustomButton(
+                        onPressed: () {
+                          final email = _emailController.text;
+                          final password = _passwordController.text;
+                          context.read<LoginCubit>().login(email, password);
+                        },
+                        buttonText: 'Login',
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.02,
+                      ),
+                      CustomButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SignUpPage()));
+                        },
+                        buttonText: 'Sign Up',
+                      ),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.02,
+                      ),
+                      CustomButton(
+                        onPressed: () {
+                          FirebaseCrashlytics.instance.crash();
+                        },
+                        buttonText: 'Crash',
+                      ),
+                    ],
                   ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.02,
-                  ),
-                  CustomButton(
-                    onPressed: () {
-                      final email = _emailController.text;
-                      final password = _passwordController.text;
-                      context.read<LoginCubit>().login(email, password);
-                    },
-                    buttonText: 'Login',
-                  ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.02,
-                  ),
-                  CustomButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => SignUpPage()));
-                    },
-                    buttonText: 'Sign Up',
-                  ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.02,
-                  ),
-                  CustomButton(
-                    onPressed: () {
-                      FirebaseCrashlytics.instance.crash();
-                    },
-                    buttonText: 'Crash',
-                  ),
-                ],
-              ),
-            );
-          },
-        ),
+                );
+              },
+            ),
+          );
+        },
       ),
     );
   }
