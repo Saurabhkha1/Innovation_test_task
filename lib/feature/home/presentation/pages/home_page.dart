@@ -8,9 +8,7 @@ import 'package:test_innoventure/feature/login/presentation/bloc/login_cubit.dar
 import 'package:test_innoventure/feature/login/presentation/pages/login_page.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
-  HomeCubit homeCubit = HomeCubit();
-
+  const HomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -21,8 +19,7 @@ class HomePage extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {
-                // context.read<HomeCubit>().logout();
-                homeCubit.logout();
+                context.read<HomeCubit>().logout();
               },
               icon: const Icon(Icons.logout),
             ),
@@ -31,17 +28,15 @@ class HomePage extends StatelessWidget {
         body: BlocListener<HomeCubit, HomeState>(
           listener: (context, state) {
             if (state is HomeLogout) {
-              WidgetsBinding.instance.addPostFrameCallback((_) {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => BlocProvider(
-                      create: (context) => LoginCubit(),
-                      child: LoginPage(),
-                    ),
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => LoginCubit(),
+                    child: LoginPage(),
                   ),
-                );
-              });
+                ),
+              );
             }
           },
           child: BlocBuilder<HomeCubit, HomeState>(

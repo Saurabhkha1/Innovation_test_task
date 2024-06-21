@@ -6,20 +6,27 @@ import 'package:test_innoventure/core/widget/custom_textfield.dart';
 import 'package:test_innoventure/feature/home/presentation/pages/home_page.dart';
 import 'package:test_innoventure/feature/login/presentation/bloc/login_cubit.dart';
 import 'package:test_innoventure/feature/login/presentation/bloc/login_state.dart';
+import 'package:test_innoventure/feature/login/presentation/bloc/password_visibility_cubit.dart';
 import 'package:test_innoventure/feature/signup/presentation/pages/signup_page.dart';
 
 class LoginPage extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final bool isObsure = true;
   LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     _emailController.text = 'test2@gmail.com';
     _passwordController.text = '12345678';
-    return BlocProvider(
-      create: (context) => LoginCubit(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => LoginCubit()..checkSession(),
+        ),
+        BlocProvider(
+          create: (context) => PasswordVisibilityCubit(),
+        ),
+      ],
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blueAccent,
@@ -28,14 +35,14 @@ class LoginPage extends StatelessWidget {
         body: BlocListener<LoginCubit, LoginState>(
           listener: (context, state) {
             if (state is LoginAuth) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Login Successfully')));
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => const HomePage()));
             } else if (state is LoginError) {
               ScaffoldMessenger.of(context)
-                  .showSnackBar(const SnackBar(content: Text('Login Failed')));
+                  .showSnackBar(SnackBar(content: Text(state.message)));
             } else if (state is LoginSuccess) {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => HomePage()));
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => const HomePage()));
             }
           },
           child: BlocBuilder<LoginCubit, LoginState>(
@@ -59,17 +66,25 @@ class LoginPage extends StatelessWidget {
                       hintText: 'User Email',
                       prefixIcon: const Icon(Icons.person),
                     ),
-                    CustomTextField(
-                      textFieldController: _passwordController,
-                      hintText: 'Password',
-                      obscureText: true,
-                      prefixIcon: const Icon(Icons.lock),
-                      suffixIcon: IconButton(
-                        icon: const Icon(
-                          Icons.remove_red_eye,
-                        ),
-                        onPressed: () {},
-                      ),
+                    BlocBuilder<PasswordVisibilityCubit, bool>(
+                      builder: (context, isObscure) {
+                        return CustomTextField(
+                          textFieldController: _passwordController,
+                          hintText: 'Password',
+                          obscureText: isObscure,
+                          prefixIcon: const Icon(Icons.lock),
+                          suffixIcon: IconButton(
+                            icon: Icon(isObscure
+                                ? Icons.visibility
+                                : Icons.visibility_off),
+                            onPressed: () {
+                              context
+                                  .read<PasswordVisibilityCubit>()
+                                  .toggleVisibility();
+                            },
+                          ),
+                        );
+                      },
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.02,

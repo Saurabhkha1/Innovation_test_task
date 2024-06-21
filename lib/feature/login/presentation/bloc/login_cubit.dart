@@ -5,12 +5,28 @@ import 'package:test_innoventure/feature/login/presentation/bloc/login_state.dar
 
 class LoginCubit extends Cubit<LoginState> {
   LoginCubit() : super(LoginInitial());
+  FirebaseAuth? firebaseAuth;
+  NetworkService? _networkService;
+
+  Future<void> checkSession() async {
+    emit(LoginLoading());
+    try {
+      final user = firebaseAuth!.currentUser;
+      if (user != null) {
+        emit(LoginAuth(user: user));
+      }
+    } catch (e) {
+      emit(LoginError(message: e.toString()));
+    }
+  }
 
   Future<void> login(String email, String password) async {
     try {
       emit(LoginLoading());
-
-      // Sign in user with email and password
+      bool? isConnected = await _networkService?.isConnected();
+      if (isConnected!) {
+        emit(const LoginError(message: 'No Internet'));
+      }
       UserCredential userCredential =
           await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: email,

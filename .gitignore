@@ -9,6 +9,21 @@
 .history
 .svn/
 .env
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+/build/
+/build_runner/
+/.idea/
+.vscode/
+*.iml
+*.class
+*.jar
+*.apk
+*.lock
+
 
 # IntelliJ related
 *.iml
