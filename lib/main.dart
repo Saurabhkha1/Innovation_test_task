@@ -40,10 +40,10 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         home: MultiBlocProvider(
           providers: [
-            BlocProvider(
+            BlocProvider<LoginCubit>(
               create: (context) => LoginCubit(),
             ),
-            BlocProvider(
+            BlocProvider<HomeCubit>(
               create: (context) => HomeCubit(),
             ),
           ],

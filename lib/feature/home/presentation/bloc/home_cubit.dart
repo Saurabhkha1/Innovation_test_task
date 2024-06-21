@@ -40,7 +40,6 @@ class HomeCubit extends Cubit<HomeState> {
     try {
       FirebaseAuth firebaseAuth = FirebaseAuth.instance;
       await firebaseAuth.signOut();
-      await Future.delayed(const Duration(seconds: 1));
       emit(HomeLogout());
     } catch (e) {
       emit(HomeError(e.toString()));
