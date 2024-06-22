@@ -10,6 +10,7 @@ class CustomButton extends StatelessWidget {
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           elevation: 2,
+          backgroundColor: Colors.blue,
           shape: const BeveledRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(3))),
         ),
