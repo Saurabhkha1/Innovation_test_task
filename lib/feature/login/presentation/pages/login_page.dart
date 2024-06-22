@@ -144,13 +144,15 @@ class LoginPage extends StatelessWidget {
                           valueListenable: _isButtonEnabledNotifier,
                           builder: (context, isButtonEnabled, child) {
                             return CustomButton(
-                              onPressed: () {
-                                final email = _emailController.text;
-                                final password = _passwordController.text;
-                                context
-                                    .read<LoginCubit>()
-                                    .login(email, password);
-                              },
+                              onPressed: isButtonEnabled
+                                  ? () {
+                                      final email = _emailController.text;
+                                      final password = _passwordController.text;
+                                      context
+                                          .read<LoginCubit>()
+                                          .login(email, password);
+                                    }
+                                  : null,
                               buttonText: 'Login',
                             );
                           }),
