@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_innoventure/feature/auth/presentation/bloc/auth_cubit.dart';
+import 'package:test_innoventure/feature/auth/presentation/bloc/auth_state.dart';
 import 'package:test_innoventure/feature/home/presentation/pages/home_page.dart';
 import 'package:test_innoventure/feature/login/presentation/pages/login_page.dart';
 
@@ -10,7 +11,7 @@ class AuthWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<AuthCubit, User?>(
+    return BlocListener<AuthCubit, AuthState>(
       listener: (context, user) {
         if (user == null) {
           Navigator.pushReplacement(
@@ -24,7 +25,7 @@ class AuthWrapper extends StatelessWidget {
           );
         }
       },
-      child: BlocBuilder<AuthCubit, User?>(
+      child: BlocBuilder<AuthCubit, AuthState>(
         builder: (context, state) {
           return const Scaffold(
               body: Center(

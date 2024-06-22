@@ -8,9 +8,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:test_innoventure/feature/auth/presentation/bloc/auth_cubit.dart';
+import 'package:test_innoventure/feature/auth/presentation/bloc/auth_state.dart';
 import 'package:test_innoventure/feature/auth/presentation/pages/auth_wrapper.dart';
 import 'package:test_innoventure/feature/home/presentation/bloc/home_cubit.dart';
+import 'package:test_innoventure/feature/home/presentation/pages/home_page.dart';
 import 'package:test_innoventure/feature/login/presentation/bloc/login_cubit.dart';
+import 'package:test_innoventure/feature/login/presentation/pages/login_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,11 +41,22 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Flutter Demo',
-        home: BlocProvider(
-          create: (context) => AuthCubit(FirebaseAuth.instance),
-          child: const AuthWrapper(),
-        ));
+    return MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (context) => AuthCubit(FirebaseAuth.instance),
+          ),
+        ],
+        child: MaterialApp(
+            title: 'Flutter Demo',
+            home: BlocBuilder<AuthCubit, AuthState>(
+              builder: (context, state) {
+                if (state is AuthAuthenticated) {
+                  return const HomePage();
+                } else {
+                  return LoginPage();
+                }
+              },
+            )));
   }
 }
