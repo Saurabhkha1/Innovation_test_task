@@ -37,13 +37,13 @@ dependencies:
   cupertino_icons: ^1.0.2
   dio: ^5.4.3+1
   bloc: ^8.1.4
-  firebase_core: ^2.8.0
+  firebase_core:
   firebase_core_web: ^2.7.0
   firebase_analytics: ^10.8.0
   firebase_analytics_web: any
   firebase_crashlytics: ^3.4.9
   firebase_auth_web: any
-  firebase_auth: ^4.16.0
+  firebase_auth:
   flutter_bloc: any
   equatable: any
   connectivity_plus: ^5.0.0

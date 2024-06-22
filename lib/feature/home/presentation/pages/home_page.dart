@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () async {
-                AuthCubit authCubit = AuthCubit(FirebaseAuth.instance);
+                AuthCubit authCubit = BlocProvider.of<AuthCubit>(context);
                 authCubit.logout();
               },
               icon: const Icon(Icons.logout),
