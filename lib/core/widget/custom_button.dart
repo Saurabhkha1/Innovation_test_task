@@ -9,8 +9,9 @@ class CustomButton extends StatelessWidget {
     return ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
+          elevation: 2,
           shape: const BeveledRectangleBorder(
-              borderRadius: BorderRadius.all(Radius.circular(6))),
+              borderRadius: BorderRadius.all(Radius.circular(3))),
         ),
         child: Text(
           buttonText ?? "",

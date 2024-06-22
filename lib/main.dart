@@ -49,6 +49,10 @@ class MyApp extends StatelessWidget {
         ],
         child: MaterialApp(
             title: 'Flutter Demo',
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(primarySwatch: Colors.blue,
+                colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+            primaryColor: Colors.blue),
             home: BlocBuilder<AuthCubit, AuthState>(
               builder: (context, state) {
                 if (state is AuthAuthenticated) {

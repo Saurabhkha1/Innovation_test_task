@@ -17,14 +17,17 @@ class HomePage extends StatelessWidget {
       create: (context) => HomeCubit()..fetchItems(),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Home'),
+          title: const Text('Home',style: TextStyle(color: Colors.white),),
+          centerTitle: true,
+          elevation: 2,
+          backgroundColor: Colors.blue,
           actions: [
             IconButton(
               onPressed: () async {
                 AuthCubit authCubit = BlocProvider.of<AuthCubit>(context);
                 authCubit.logout();
               },
-              icon: const Icon(Icons.logout),
+              icon: const Icon(Icons.logout,color: Colors.white,),
             ),
           ],
         ),
@@ -65,12 +68,10 @@ class HomePage extends StatelessWidget {
                       return Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Card(
-                          color: index % 2 == 0
-                              ? Colors.white
-                              : Colors.grey.withOpacity(0.16),
+                          color: const Color.fromRGBO(255, 255, 255, 1.0),
                           elevation: 2,
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15.0),
+                            borderRadius: BorderRadius.circular(5.0),
                           ),
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -78,10 +79,11 @@ class HomePage extends StatelessWidget {
                               title: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Id: ${item.id.toString()}"),
-                                  Text("Name: ${item.name ?? ""}")
+                                  Text(item.name.toString()),
+                                  Text(item.email ?? "")
                                 ],
                               ),
+                              trailing: const Icon(Icons.arrow_forward_ios_outlined,color: Colors.blue,),
                               onTap: () {
                                 Navigator.push(
                                   context,

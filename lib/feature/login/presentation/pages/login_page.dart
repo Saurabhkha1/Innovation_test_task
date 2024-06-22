@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_innoventure/core/utils/password_validator.dart';
@@ -22,6 +24,7 @@ class LoginPage extends StatelessWidget {
   final ValueNotifier<bool> _isButtonEnabledNotifier =
       ValueNotifier<bool>(false);
   final ValidateEmail _validateEmail = ValidateEmail();
+
   LoginPage({super.key});
 
   @override
@@ -39,10 +42,6 @@ class LoginPage extends StatelessWidget {
         ),
       ],
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
-          title: const Text('Flutter Test'),
-        ),
         body: BlocListener<LoginCubit, LoginState>(
           listener: (context, state) {
             if (state is LoginAuth) {
@@ -67,36 +66,41 @@ class LoginPage extends StatelessWidget {
                   child: CircularProgressIndicator(),
                 );
               }
-              return SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
+              return Center(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(30.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const SizedBox(
-                        height: 20,
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 30),
+                        height: MediaQuery.of(context).size.height * 0.15,
+                        child: Image.asset('assets/images/flutter_icon.png'),
                       ),
                       ValueListenableBuilder(
                           valueListenable: _emailErrorNotifier,
                           builder: (context, emailError, child) {
-                            return CustomTextField(
-                              textFieldController: _emailController,
-                              hintText: 'User Email',
-                              prefixIcon: const Icon(Icons.person),
-                              errorText: emailError,
-                              onChanged: (value) {
-                                if (_emailController.text.isEmpty) {
-                                  _emailErrorNotifier.value =
-                                      'Please Enter Email Address';
-                                } else if (_validateEmail(value)) {
-                                  _emailErrorNotifier.value = null;
-                                } else {
-                                  _emailErrorNotifier.value =
-                                      'Invalid Email Format';
-                                }
-                                _validateForm();
-                              },
+                            return SizedBox(
+                              width: kIsWeb ? 420 : double.infinity,
+                              child: CustomTextField(
+                                textFieldController: _emailController,
+                                hintText: 'User Email',
+                                prefixIcon: const Icon(Icons.person,
+                                    color: Colors.blue),
+                                errorText: emailError,
+                                onChanged: (value) {
+                                  if (_emailController.text.isEmpty) {
+                                    _emailErrorNotifier.value =
+                                        'Please Enter Email Address';
+                                  } else if (_validateEmail(value)) {
+                                    _emailErrorNotifier.value = null;
+                                  } else {
+                                    _emailErrorNotifier.value =
+                                        'Invalid Email Format';
+                                  }
+                                  _validateForm();
+                                },
+                              ),
                             );
                           }),
                       ValueListenableBuilder(
@@ -104,35 +108,43 @@ class LoginPage extends StatelessWidget {
                           builder: (context, passwordError, child) {
                             return BlocBuilder<PasswordVisibilityCubit, bool>(
                               builder: (context, isObscure) {
-                                return CustomTextField(
-                                  textFieldController: _passwordController,
-                                  hintText: 'Password',
-                                  obscureText: isObscure,
-                                  errorText: passwordError,
-                                  prefixIcon: const Icon(Icons.lock),
-                                  suffixIcon: IconButton(
-                                    icon: Icon(isObscure
-                                        ? Icons.visibility
-                                        : Icons.visibility_off),
-                                    onPressed: () {
-                                      context
-                                          .read<PasswordVisibilityCubit>()
-                                          .toggleVisibility();
+                                return SizedBox(
+                                  width: kIsWeb ? 420 : double.infinity,
+                                  child: CustomTextField(
+                                    textFieldController: _passwordController,
+                                    hintText: 'Password',
+                                    obscureText: isObscure,
+                                    errorText: passwordError,
+                                    prefixIcon: const Icon(
+                                      Icons.lock,
+                                      color: Colors.blue,
+                                    ),
+                                    suffixIcon: IconButton(
+                                      icon: Icon(
+                                          isObscure
+                                              ? Icons.visibility
+                                              : Icons.visibility_off,
+                                          color: Colors.blue),
+                                      onPressed: () {
+                                        context
+                                            .read<PasswordVisibilityCubit>()
+                                            .toggleVisibility();
+                                      },
+                                    ),
+                                    onChanged: (value) {
+                                      if (_passwordController.text.isEmpty) {
+                                        _passwordErrorNotifier.value =
+                                            'Please Enter Password';
+                                      } else if (PasswordValidator.isValid(
+                                          value)) {
+                                        _passwordErrorNotifier.value = null;
+                                      } else {
+                                        _passwordErrorNotifier.value =
+                                            'Password must be at least 6 characters, include an uppercase letter, a number, and a special character';
+                                      }
+                                      _validateForm();
                                     },
                                   ),
-                                  onChanged: (value) {
-                                    if (_passwordController.text.isEmpty) {
-                                      _passwordErrorNotifier.value =
-                                          'Please Enter Password';
-                                    } else if (PasswordValidator.isValid(
-                                        value)) {
-                                      _passwordErrorNotifier.value = null;
-                                    } else {
-                                      _passwordErrorNotifier.value =
-                                          'Password must be at least 6 characters, include an uppercase letter, a number, and a special character';
-                                    }
-                                    _validateForm();
-                                  },
                                 );
                               },
                             );
@@ -143,39 +155,44 @@ class LoginPage extends StatelessWidget {
                       ValueListenableBuilder(
                           valueListenable: _isButtonEnabledNotifier,
                           builder: (context, isButtonEnabled, child) {
-                            return CustomButton(
-                              onPressed: isButtonEnabled
-                                  ? () {
-                                      final email = _emailController.text;
-                                      final password = _passwordController.text;
-                                      context
-                                          .read<LoginCubit>()
-                                          .login(email, password);
-                                    }
-                                  : null,
-                              buttonText: 'Login',
+                            return SizedBox(
+                              width: kIsWeb ? 420 : double.infinity,
+                              child: CustomButton(
+                                onPressed: isButtonEnabled
+                                    ? () {
+                                        final email = _emailController.text;
+                                        final password =
+                                            _passwordController.text;
+                                        context
+                                            .read<LoginCubit>()
+                                            .login(email, password);
+                                      }
+                                    : null,
+                                buttonText: 'Login',
+                              ),
                             );
                           }),
                       SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.02,
+                        height: MediaQuery.of(context).size.height * 0.03,
                       ),
-                      CustomButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => SignUpPage()));
-                        },
-                        buttonText: 'Sign Up',
+                      GestureDetector(
+                        child: const Text("Test app crash"),
+                        onTap: () => FirebaseCrashlytics.instance.crash(),
                       ),
                       SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.02,
+                        height: MediaQuery.of(context).size.height * 0.03,
                       ),
-                      CustomButton(
-                        onPressed: () {
-                          FirebaseCrashlytics.instance.crash();
-                        },
-                        buttonText: 'Crash',
+                      SizedBox(
+                        width: kIsWeb ? 420 : double.infinity,
+                        child: CustomButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SignUpPage()));
+                          },
+                          buttonText: 'Don\'t have account? Sign Up',
+                        ),
                       ),
                     ],
                   ),
