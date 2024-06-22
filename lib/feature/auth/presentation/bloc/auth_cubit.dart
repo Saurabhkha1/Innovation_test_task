@@ -7,6 +7,13 @@ class AuthCubit extends Cubit<AuthState> {
   final FirebaseAuth _firebaseAuth;
 
   AuthCubit(this._firebaseAuth) : super(AuthInitial()) {
+    _firebaseAuth.authStateChanges().listen((User? user) {
+      if (user != null) {
+        emit(AuthAuthenticated(user));
+      } else {
+        emit(AuthUnauthenticated());
+      }
+    });
     checkAuthStatus();
   }
 
@@ -20,7 +27,11 @@ class AuthCubit extends Cubit<AuthState> {
   }
 
   Future<void> logout() async {
-    await _firebaseAuth.signOut();
-    emit(AuthUnauthenticated());
+    try {
+      await _firebaseAuth.signOut();
+      emit(AuthUnauthenticated());
+    } catch (e) {
+      print("The Error  is ${e.toString()}");
+    }
   }
 }
