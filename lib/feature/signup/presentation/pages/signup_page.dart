@@ -114,9 +114,7 @@ class SignUpPage extends StatelessWidget {
                   listener: (context, state) {
                     if (state is SignUpSuccess) {
                       ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                            content: Text(
-                                'Sign up successful! User ID: //${state.userId}')),
+                        const SnackBar(content: Text('Sign up successful!')),
                       );
                     } else if (state is SignUpFailure) {
                       ScaffoldMessenger.of(context).showSnackBar(
@@ -128,16 +126,26 @@ class SignUpPage extends StatelessWidget {
                     if (state is SignUpLoading) {
                       return const CircularProgressIndicator();
                     }
-                    return CustomButton(
-                      onPressed: () {
-                        final email = _emailController.text.trim();
-                        final password = _passwordController.text.trim();
-                        if (email.isNotEmpty && password.isNotEmpty) {
-                          context.read<SignUpCubit>().signUp(email, password);
-                        }
-                      },
-                      buttonText: 'Sign Up',
-                    );
+                    return ValueListenableBuilder(
+                        valueListenable: _isButtonEnabledNotifier,
+                        builder: (context, isButtonEnabled, child) {
+                          return CustomButton(
+                            onPressed: isButtonEnabled
+                                ? () {
+                                    final email = _emailController.text.trim();
+                                    final password =
+                                        _passwordController.text.trim();
+                                    if (email.isNotEmpty &&
+                                        password.isNotEmpty) {
+                                      context
+                                          .read<SignUpCubit>()
+                                          .signUp(email, password);
+                                    }
+                                  }
+                                : null,
+                            buttonText: 'Sign Up',
+                          );
+                        });
                   },
                 ),
               ],
