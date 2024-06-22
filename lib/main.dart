@@ -9,10 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:test_innoventure/feature/auth/presentation/bloc/auth_cubit.dart';
 import 'package:test_innoventure/feature/auth/presentation/bloc/auth_state.dart';
-import 'package:test_innoventure/feature/auth/presentation/pages/auth_wrapper.dart';
-import 'package:test_innoventure/feature/home/presentation/bloc/home_cubit.dart';
 import 'package:test_innoventure/feature/home/presentation/pages/home_page.dart';
-import 'package:test_innoventure/feature/login/presentation/bloc/login_cubit.dart';
 import 'package:test_innoventure/feature/login/presentation/pages/login_page.dart';
 
 Future<void> main() async {
@@ -50,9 +47,10 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
             title: 'Flutter Demo',
             debugShowCheckedModeBanner: false,
-            theme: ThemeData(primarySwatch: Colors.blue,
+            theme: ThemeData(
+                primarySwatch: Colors.blue,
                 colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-            primaryColor: Colors.blue),
+                primaryColor: Colors.blue),
             home: BlocBuilder<AuthCubit, AuthState>(
               builder: (context, state) {
                 if (state is AuthAuthenticated) {
