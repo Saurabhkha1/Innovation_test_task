@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_innoventure/core/widget/custom_button.dart';
@@ -32,7 +33,8 @@ class HomePage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => BlocProvider(
-                    create: (context) => LoginCubit(),
+                    create: (context) =>
+                        LoginCubit(firebaseAuth: FirebaseAuth.instance),
                     child: LoginPage(),
                   ),
                 ),
