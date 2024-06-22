@@ -11,6 +11,8 @@ class CustomTextField extends StatelessWidget {
   final String? fontFamily;
   final bool? obscureText;
   final TextEditingController? textFieldController;
+  final String? errorText;
+  final void Function(String)? onChanged;
   const CustomTextField(
       {super.key,
       this.hintText,
@@ -22,7 +24,9 @@ class CustomTextField extends StatelessWidget {
       this.fontSize,
       this.fontFamily,
       this.obscureText,
-      this.textFieldController});
+      this.textFieldController,
+      this.errorText,
+      this.onChanged});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -30,7 +34,9 @@ class CustomTextField extends StatelessWidget {
       child: SizedBox(
           width: double.infinity,
           child: TextField(
+            onChanged: onChanged,
             decoration: InputDecoration(
+              errorText: errorText,
               border:
                   OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
               hintText: hintText,
